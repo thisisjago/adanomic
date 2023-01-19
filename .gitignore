@@ -1,6 +1,9 @@
 .env
 vite-sample-page
 package-lock.json
+index.html
+style.css
+responsive.css
 # Logs
 logs
 *.log
