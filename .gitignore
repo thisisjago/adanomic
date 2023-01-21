@@ -28,3 +28,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# ---
+charts.js
+epoch.js
+inflation.js
+lovelace.js
+market.js
+staking.js
+supply.js
+main.js
