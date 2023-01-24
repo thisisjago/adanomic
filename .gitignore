@@ -4,6 +4,9 @@ package-lock.json
 index.html
 style.css
 responsive.css
+#images
+favicon.ico
+peerreviewmoney-logo.svg
 # Logs
 logs
 *.log
@@ -38,3 +41,4 @@ staking.js
 supply.js
 main.js
 test.js
+
