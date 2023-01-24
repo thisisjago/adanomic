@@ -1,6 +1,6 @@
 // vite.config.js
 export default {
-    base: '/adanomic/'
+    base: '/peerreviewmoney/'
     // config options
   }
   
