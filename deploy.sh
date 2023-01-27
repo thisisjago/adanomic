@@ -1,18 +1,18 @@
-#!/usr/bin/envsh
+#!/usr/bin/env sh
 
-# abortar en caso de errores
+# abort on errors
 set -e
 
-# compilado
+# build
 npm run build
 
-# navega al directorio de salida de compilación
+# navigate into the build output directory
 cd dist
 
-# coloca .nojekyll para forzar el procesamiento de Jekyll
+# place .nojekyll to bypass Jekyll processing
 echo > .nojekyll
 
-# si estás desplegando en un dominio personalizado
+# if you are deploying to a custom domain
 # echo 'peerreview.money' > CNAME
 
 git init
@@ -20,10 +20,10 @@ git checkout -B main
 git add -A
 git commit -m 'deploy'
 
-# si estás desplegando en https://<NOMBRE DE USUARIO>.github.io
-# git push -f git@github.com:<NOMBRE DE USUARIO>/<NOMBRE DE USUARIO>.github.io.git main
+# if you are deploying to https://<USERNAME>.github.io
+# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
-# si estás desplegando en https://<NOMBRE DE USUARIO>.github.io/<REPO>
-# git push -f git@github.com:thisisjago/peerreviewmoney.git main:gh-pages
+# if you are deploying to https://<USERNAME>.github.io/<REPO>
+# git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages
 
 cd -
