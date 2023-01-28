@@ -1,6 +1,6 @@
 // vite.config.js
 export default {
-    base: '/peerreviewmoney/',
+    base: '/',
     build: {
       target: 'esnext'
     }

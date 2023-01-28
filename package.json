@@ -1,5 +1,6 @@
 {
   "name": "adanomic",
+  "homepage": "peerreview.money",
   "private": true,
   "version": "0.0.0",
   "type": "module",
