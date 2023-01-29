@@ -17,6 +17,7 @@
     
     
     
+    
     <link rel="canonical" href="https://peerreview.money">
     
     
@@ -27,8 +28,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/assets/favicon-ad9b636e.ico" type="image/x-icon">
     <title>Peer Review Money | The economics of (₳)ada</title>
-  <script type="module" crossorigin src="/assets/index-55e0596c.js"></script>
-  <link rel="stylesheet" href="/assets/index-c701e119.css">
+  <script type="module" crossorigin src="/assets/index-30bee540.js"></script>
+  <link rel="stylesheet" href="/assets/index-8e9ec136.css">
 </head>
 <body>
     <!-- whole header -->
@@ -47,10 +48,12 @@
     <div class="box">
         <!-- individual boxes -->
         <div class="square epoch">
-            <h2 id="epochEndingTime">Epoch</h2>
+            <!-- <h2 id="epochEndingTime">Epoch</h2> -->
             <div class="boxContent">
                 <div class="item">
-                    <span id="epoch-no" class="data">000</span>
+                    
+                    <span id="epoch-no">000</span>
+                    <span id="epochEndingTime">Epoch</span>
                 </div>
                 <div class="item">
                     <span class="titles">Blocks</span>
@@ -76,10 +79,7 @@
                 <div class="item">
                     <span class="titles">Price</span>
                     <span id="usdp" class="data">$00.00</span>
-                </div>
-                <div class="item">
-                    <span class="titles">Sats</span>
-                    <span id="btcp" class="data">0000</span>
+                    <span id="btcp">0000</span>
                 </div>
                 <div class="item">
                     <span class="titles">Market Cap</span>
@@ -128,6 +128,9 @@
             </div>
             <div class="charts">
                 <canvas id="priceChart"></canvas>
+            </div>
+            <div class="description-boxes">
+                <p>ADA price history.</p>
             </div>
         </div>
         <div class="square inflation-data">
@@ -180,6 +183,9 @@
             <div class="charts">
                 <canvas id="supplyChart"></canvas>
             </div>
+            <div class="description-boxes">
+                <p>History of the total supply issued starting from the Shelley mainnet.</p>
+            </div>
         </div>
         <div class="square issuance">
             <div class="chartControl">
@@ -191,6 +197,9 @@
             </div>
             <div class="charts">
                 <canvas id="issuanceChart"></canvas>
+            </div>
+            <div class="description-boxes">
+                <p>Total new issuance of coins by each epoch since the Shelley mainnet.</p>
             </div>
         </div>
         <div class="square tvl">
@@ -221,6 +230,9 @@
             </div>
             <div class="charts">
                 <canvas id="tvlChart"></canvas>
+            </div>
+            <div class="description-boxes">
+                <p>Total value locked in ADA across the Cardano blockchain.</p>
             </div>
         </div>
         <div class="square staking">
@@ -255,6 +267,9 @@
             <div class="charts">
                 <canvas id="stakeChart"></canvas>
             </div>
+            <div class="description-boxes">
+                <p>History of all the ADA staked by epoch since the Shelley mainnet.</p>
+            </div>
         </div>
         <div class="square stock-flow">
             <div class="chartControl">
@@ -266,6 +281,9 @@
             </div>
             <div class="charts">
                 <canvas id="stockflowChart"></canvas>
+            </div>
+            <div class="description-boxes">
+                <p>Stock/Flow ratio shows how many years it takes to mint all the ADA available today since the Shelley mainnet.</p>
             </div>
         </div>
         <div class="square reserves">
@@ -290,6 +308,9 @@
             <div class="charts">
                 <canvas id="reserveChart"></canvas>
             </div>
+            <div class="description-boxes">
+                <p>History of all ADA reserves by epoch since the Shelley mainnet.</p>
+            </div>
         </div>
         <div class="square treasury">
             <h2>Treasury</h2>
@@ -312,6 +333,9 @@
             <h6>Treasury History</h6>
             <div class="charts">
                 <canvas id="treasuryChart"></canvas>
+            </div>
+            <div class="description-boxes">
+                <p>History of all the ADA in the treasury by epoch since the Shelley mainnet.</p>
             </div>
         </div>
     </div>
