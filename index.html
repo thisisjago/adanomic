@@ -19,6 +19,7 @@
     
     
     
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7V84CJGCDX"></script>
     <script data-goatcounter="https://qrix6k3elmc9b8.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
@@ -32,8 +33,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/assets/favicon-ad9b636e.ico" type="image/x-icon">
     <title>Peer Review Money | The economics of (₳)ada</title>
-  <script type="module" crossorigin src="/assets/index-c4e4bc12.js"></script>
-  <link rel="stylesheet" href="/assets/index-8e9ec136.css">
+  <script type="module" crossorigin src="/assets/index-9f6b2327.js"></script>
+  <link rel="stylesheet" href="/assets/index-5ccbc43b.css">
 </head>
 <body>
     <!-- whole header -->
@@ -52,10 +53,8 @@
     <section class="box">
         <!-- individual boxes -->
         <div class="square epoch">
-            <!-- <h2 id="epochEndingTime">Epoch</h2> -->
             <div class="boxContent">
                 <div class="item">
-                    
                     <span id="epoch-no">000</span>
                     <span id="epochEndingTime">Epoch</span>
                 </div>
@@ -143,7 +142,7 @@
                 <div class="item">
                     <div class="chartControl inflation">
                         <span class="titles">YoY</span>
-                        <span><button type="button" id="withStake" class="chartButton">Staking</button></span>
+                        <span><button type="button" id="withStake" class="chartButton">+ Staking</button></span>
                     </div>
                     <span id="yoy" class="data">00.00%</span>
                 </div>
@@ -240,7 +239,29 @@
             </div>
         </div>
         <div class="square staking">
-            <h2>Staking</h2>
+            <div class="stakingCalculator">
+                <h2>Staking</h2>
+                <!-- calculator button -->
+                <a href="#popup" class="calculatorButton">Calculator</a>
+                <div id="popup" class="popup">
+                    <a href="#stakingCalculator" class="close">&times;</a>
+                    <div class="square calculator">
+                        <h2>Calculator</h2>
+                        <input id="how-much-ada" type="text" placeholder="How much ada?">
+                        <span class="titleCalculator">Per Epoch:</span>
+                        <span id="ratePerEpoch" class="resultCalculator">0.00</span>
+                        <span class="titleCalculator">Per Month:</span>
+                        <span id="ratePerMonth" class="resultCalculator">0.00</span>
+                        <span class="titleCalculator">Per Year:</span>
+                        <span id="ratePerYear" class="resultCalculator">0.00</span>
+                        <div class="description-boxes descriptionPopup">
+                            <p>This calculation is based on the current staking percentage avg.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="close-popup"></a>
+                <!-- ----------------- -->
+            </div>
             <div class="boxContent">
                 <div class="item">
                     <span class="titles">% / Staking</span>
@@ -347,7 +368,7 @@
     <!-- Footer! -->
     <footer class="box f">
         <div class="af">
-            <h6>peerreview.money</h6>
+            <h6>peerreview.money v1.1.0</h6>
             <div class="boxContentF">
                 <div id="about" class="item">
                     <p>Pretty straight forward site about the economics of ada, the native currency of the Cardano blockchain.</p>
